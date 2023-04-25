@@ -1,0 +1,7 @@
+project: formats
+target: base64ct
+duration: 90
+
+cmds:
+    - cmd: /base64ct
+

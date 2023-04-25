@@ -17,6 +17,9 @@ path = "../base16ct"
 [dependencies.base32ct]
 path = "../base32ct"
 
+[dependencies.base64ct]
+path = "../base64ct"
+
 # Prevent this from interfering with workspaces
 [workspace]
 members = ["."]
@@ -54,5 +57,17 @@ doc = false
 [[bin]]
 name = "base32ct_mixed"
 path = "fuzz_targets/base32ct_upper.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "base64ct"
+path = "fuzz_targets/base64ct.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "base64ct_url"
+path = "fuzz_targets/base64ct_url.rs"
 test = false
 doc = false

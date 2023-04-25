@@ -29,3 +29,7 @@ COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base32
 COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base32ct_unpadded /
 
 COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base32ct_mixed /
+
+COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base64ct /
+
+COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base64ct_url /
