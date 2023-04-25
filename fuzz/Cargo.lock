@@ -13,6 +13,10 @@ name = "base16ct"
 version = "0.2.0"
 
 [[package]]
+name = "base32ct"
+version = "0.2.0"
+
+[[package]]
 name = "cc"
 version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -26,6 +30,7 @@ name = "formats-fuzz"
 version = "0.1.0"
 dependencies = [
  "base16ct",
+ "base32ct",
  "libfuzzer-sys",
 ]
 

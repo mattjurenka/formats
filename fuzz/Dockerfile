@@ -23,3 +23,9 @@ COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base16
 COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base16ct_higher /
 
 COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base16ct_mixed /
+
+COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base32ct /
+
+COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base32ct_unpadded /
+
+COPY --from=builder /formats/fuzz/target/x86_64-unknown-linux-gnu/release/base32ct_mixed /

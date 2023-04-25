@@ -14,6 +14,9 @@ libfuzzer-sys = "0.4"
 [dependencies.base16ct]
 path = "../base16ct"
 
+[dependencies.base32ct]
+path = "../base32ct"
+
 # Prevent this from interfering with workspaces
 [workspace]
 members = ["."]
@@ -33,5 +36,23 @@ doc = false
 [[bin]]
 name = "base16ct_mixed"
 path = "fuzz_targets/base16ct_mixed.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "base32ct"
+path = "fuzz_targets/base32ct.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "base32ct_unpadded"
+path = "fuzz_targets/base32ct_unpadded.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "base32ct_mixed"
+path = "fuzz_targets/base32ct_upper.rs"
 test = false
 doc = false

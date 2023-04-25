@@ -1,0 +1,7 @@
+project: formats
+target: base32ct_mixed
+duration: 90
+
+cmds:
+    - cmd: /base32ct_mixed
+
