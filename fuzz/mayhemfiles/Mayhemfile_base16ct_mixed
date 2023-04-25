@@ -1,0 +1,7 @@
+project: formats
+target: base16ct_mixed
+duration: 90
+
+cmds:
+    - cmd: /base16ct_mixed
+

@@ -23,3 +23,15 @@ name = "base16ct"
 path = "fuzz_targets/base16ct.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "base16ct_higher"
+path = "fuzz_targets/base16ct_higher.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "base16ct_mixed"
+path = "fuzz_targets/base16ct_mixed.rs"
+test = false
+doc = false
