@@ -8,4 +8,4 @@ fuzz_target!(|value: &[u8]| {
     let encoded = Base64Url::encode(value, encode_buf.as_mut_slice()).unwrap();
     let decoded = Base64Url::decode(encoded, decode_buf.as_mut_slice()).unwrap();
     assert_eq!(decoded, value);
-});2
+});
